@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('../font/Cocogoose-Pro-Thin-Trial.ttf');
+  }
 :root {
 
     /* colors */
@@ -6,8 +11,8 @@
     --clr-primary: #ec5242;
 
     /* fonts */
-    --ff-cocogoose:'cocogoose';
-    --ff-lato:'lato', sans-serif;
+    --ff-cocogoose:'Cocogoose', sans-serif;
+    --ff-lato:'Lato', sans-serif;
 
     --gap: 1rem;
 }
@@ -20,8 +25,8 @@
 .text-light { color: var(--clr-light);}
 .text-primary { color: var(--clr-primary);}
 
-.ff-lato { font-family:var(--ff-cocogoose);}
-.ff-congoose { font-family: var(--ff-cocogoose);}
+.ff-lato { font-family:var(--ff-lato);}
+.ff-cocogoose { font-family: var(--ff-cocogoose);}
 
 .flex {
     display: flex;
@@ -46,9 +51,22 @@
 
 .center {
     text-align: center;
+    margin: 0 auto;
 }
 
-.container {
-    max-width: 90%;
+.container > * {
+    max-width: 85%;
     margin: 0 auto;
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.mg-1 {
+    margin-block: 1rem;
+}
+
+.mg-2 {
+    margin-block: 2rem;
 }
