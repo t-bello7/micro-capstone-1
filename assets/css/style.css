@@ -5,8 +5,38 @@
     background-size: cover;
 }
 
-.mobile-menu {
+.header-about {
+    background: var(--clr-light);
+}
+
+
+.menu {
     display: none;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visible{
+    display: flex;
+}
+
+.nav{
+    flex-direction: column;
+}
+
+a:hover {
+    color: var(--clr-primary);
+}
+.btn-campaign {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: var(--clr-white);
+    color: var(--clr-primary);
+    border: 3px solid var(--clr-primary);
 }
 
 .bg-text{
@@ -23,8 +53,22 @@
     padding-bottom: 2rem;
 }
 
-.logo{
-    margin: 2rem 0 0 2rem; 
+.main > div{
+    gap: var(--gap);
+}
+
+.card-mains {
+    flex-direction: column;
+}
+
+.btn-close,
+.btn-menu{
+    margin: 2rem 0 0 2rem;
+}
+
+.btn-close{
+    position: absolute;
+    left: 2%;
 }
 
 .card {
@@ -35,6 +79,7 @@
 .card-main {
     border: none;
     background-color: rgba(255,255,255,0.6);
+    align-items: center;
 }
 
 .btn {
@@ -49,22 +94,24 @@
 .drivers {
     padding-bottom: 2rem;
 }
+
 .driver-img {
     width: 100%;
+    position: relative;
 }
 
 .driver-img::before{
-    background-image: url("../img/checkers.jpg");
+    background-image: url(../img/checkers.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 100%;
-    height: 50px;
+    width: 80%;
+    height: 100px;
     content: "";
     z-index: -10;
-    position: relative;
+    position: absolute;
     left: -10px;
-    top: 40px;
+    top: -10px;
 }
 
 .btn-driver {
@@ -77,6 +124,11 @@
 .btn-driver > i {
     margin-left: 1rem;
 }
+
+.about {
+    margin-bottom: 4rem;
+}
+
 
 .card-about {
     background-color: var(--clr-white);
@@ -119,5 +171,91 @@
     right: 0;
     position: absolute;
     z-index: -1;
+}
+
+
+@media (min-width: 768px) {
+    .header, .header-about {
+        height: 100vh;
+    }
+
+    .header > h1, .header-about > h1 {
+        margin-top: 10%;
+    }
+
+    .btn-menu, .btn-close {
+        display: none !important;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        background-color: var(--clr-white);
+        width: 100%;
+        max-width: 100%;
+        padding-inline: 8%;
+        height: 10vh;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .nav{
+        flex-direction: row;
+    }
+
+    .card-header{
+     width: 70%;
+     margin-inline-start: 7%;
+    }
+
+    .card-mains{
+        flex-direction: row;
+    }
+    
+    .card-main{
+        flex-direction: column;
+    }
+
+    .card-main > svg {
+        width: 50px;
+        height: 50px;
+    }
+  
+    /* .driver-img {
+        width: 100px;
+    } */
+
+    .drivers .drivers-header {
+        grid-area: drivers-header;
+    }
+
+    .drivers{
+        grid-template-areas: "drivers-header drivers-header"
+             " . .";
+    }
+
+    .btn-driver{
+        display: none;
+    }
+    .champions .champions-header{
+        grid-area: champions-header;
+    }
+    .champions .champion-desc {
+        grid-area: champions-desc;
+    }
+    .champions {
+        grid-template-areas: "champions-header champions-header"
+                            " champions-desc champions-desc"
+    }
+    .card-about{
+        width: 60%;
+    } 
+
+    .card-logo {
+        width: 25%;
+        padding: 2rem;
+    }
 }
 
