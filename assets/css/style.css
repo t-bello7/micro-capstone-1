@@ -53,7 +53,7 @@
 }
 
 .driver-img::before{
-    background-image: url(../img/checkers.jpg);
+    background-image: url("../img/checkers.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     display: inline-block;
@@ -86,11 +86,11 @@
 }
 
 .champion-one {
-    background-image: url(../img/champion-2021.jpg);
+    background-image: url("../img/champion-2021.jpg");
 }
 
 .champion-two {
-    background-image: url(../img/champion-2020.jpg);
+    background-image: url("../img/champion-2020.jpg");
 }
 
 .partners{
