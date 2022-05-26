@@ -86,11 +86,11 @@
 }
 
 .champion-one {
-    background-image: url(../img/champion-2021.jpg);
+    background-image: url("../img/champion-2021.jpg");
 }
 
 .champion-two {
-    background-image: url(../img/champion-2020.jpg);
+    background-image: url("../img/champion-2020.jpg");
 }
 
 .partners{
