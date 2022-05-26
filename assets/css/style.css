@@ -1,261 +1,267 @@
 .header {
-    background-image: url("../img/f-car-bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/f-car-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-about {
-    background: var(--clr-light);
+  background: var(--clr-light);
 }
-
 
 .menu {
-    display: none;
-    height: 100vh;
-    position: absolute;
-    top:0;
-    width: 60%;
-    flex-direction: column;
-    align-items: center;
+  display: none;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
 }
 
-.visible{
-    display: flex;
+.visible {
+  display: flex;
 }
 
-.nav{
-    flex-direction: column;
+.nav {
+  flex-direction: column;
 }
 
 a:hover {
-    color: var(--clr-primary);
-}
-.btn-campaign {
-    display: inline-block;
-    padding: 0.5rem;
-    background-color: var(--clr-white);
-    color: var(--clr-primary);
-    border: 3px solid var(--clr-primary);
+  color: var(--clr-primary);
 }
 
-.bg-text{
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: url("../img/bg-img.jpg");
+.btn-campaign {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: var(--clr-white);
+  color: var(--clr-primary);
+  border: 3px solid var(--clr-primary);
+}
+
+.bg-text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url("../img/bg-img.jpg");
 }
 
 .main {
-    background-image: url("../img/tire-bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 2rem;
+  background-image: url("../img/tire-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2rem;
 }
 
-.main > div{
-    gap: var(--gap);
+.main > div {
+  gap: var(--gap);
 }
 
 .card-mains {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .btn-close,
-.btn-menu{
-    margin: 2rem 0 0 2rem;
+.btn-menu {
+  margin: 2rem 0 0 2rem;
 }
 
-.btn-close{
-    position: absolute;
-    left: 2%;
+.btn-close {
+  position: absolute;
+  left: 2%;
 }
 
 .card {
-    padding: 1rem;
-    border: 3px solid #fff;
+  padding: 1rem;
+  border: 3px solid #fff;
 }
 
 .card-main {
-    border: none;
-    background-color: rgba(255,255,255,0.6);
-    align-items: center;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  align-items: center;
 }
 
 .btn {
-    padding: 2rem 3rem;
-    display: block;
+  padding: 2rem 3rem;
+  display: block;
 }
 
 .partner {
-    fill: var(--clr-dark)
+  fill: var(--clr-dark);
 }
 
 .drivers {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .driver-img {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
-.driver-img::before{
-    background-image: url(../img/checkers.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 80%;
-    height: 100px;
-    content: "";
-    z-index: -10;
-    position: absolute;
-    left: -10px;
-    top: -10px;
+.driver-img::before {
+  background-image: url(../img/checkers.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 80%;
+  height: 100px;
+  content: "";
+  z-index: -10;
+  position: absolute;
+  left: -10px;
+  top: -10px;
 }
 
 .btn-driver {
-    width: 100%;
-    background: none;
-    border: 1px solid var(--clr-light);
-    padding: 0.5rem 0;
+  width: 100%;
+  background: none;
+  border: 1px solid var(--clr-light);
+  padding: 0.5rem 0;
 }
 
 .btn-driver > i {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .about {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
-
 
 .card-about {
-    background-color: var(--clr-white);
-    border: 1px solid var(--clr-light);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-light);
 }
 
-.champion{
-    width: 80%;
-    padding: 4rem 3rem;
-    position: relative;
-    color: var(--clr-white);
-    background-color: rgb(236, 82,66);
-    z-index: 2;
+.champion {
+  width: 80%;
+  padding: 4rem 3rem;
+  position: relative;
+  color: var(--clr-white);
+  background-color: rgb(236, 82, 66);
+  z-index: 2;
 }
 
 .champion-one::after {
-    content: "";
-    background-image: url("../img/champion-2021.jpg");
-    background-color: var(--clr-primary);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+  content: "";
+  background-image: url("../img/champion-2021.jpg");
+  background-color: var(--clr-primary);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .champion-two::after {
-    content: "";
-    background-image: url("../img/champion-2020.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+  content: "";
+  background-image: url("../img/champion-2020.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
-
 @media (min-width: 768px) {
-    .header, .header-about {
-        height: 100vh;
-    }
+  .header,
+  .header-about {
+    height: 100vh;
+  }
 
-    .header > h1, .header-about > h1 {
-        margin-top: 10%;
-    }
+  .header > h1,
+  .header-about > h1 {
+    margin-top: 10%;
+  }
 
-    .btn-menu, .btn-close {
-        display: none !important;
-    }
+  .btn-menu,
+  .btn-close {
+    display: none !important;
+  }
 
-    .menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: static;
-        background-color: var(--clr-white);
-        width: 100%;
-        max-width: 100%;
-        padding-inline: 8%;
-        height: 10vh;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    background-color: var(--clr-white);
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 8%;
+    height: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  }
 
-    .nav{
-        flex-direction: row;
-    }
+  .nav {
+    flex-direction: row;
+  }
 
-    .card-header{
-     width: 70%;
-     margin-inline-start: 7%;
-    }
+  .card-header {
+    width: 70%;
+    margin-inline-start: 7%;
+  }
 
-    .card-mains{
-        flex-direction: row;
-    }
-    
-    .card-main{
-        flex-direction: column;
-    }
+  .card-mains {
+    flex-direction: row;
+  }
 
-    .card-main > svg {
-        width: 50px;
-        height: 50px;
-    }
-  
-    /* .driver-img {
+  .card-main {
+    flex-direction: column;
+  }
+
+  .card-main > svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* .driver-img {
         width: 100px;
     } */
 
-    .drivers .drivers-header {
-        grid-area: drivers-header;
-    }
+  .drivers .drivers-header {
+    grid-area: drivers-header;
+  }
 
-    .drivers{
-        grid-template-areas: "drivers-header drivers-header"
-             " . .";
-    }
+  .drivers {
+    grid-template-areas:
+      "drivers-header drivers-header"
+      " . .";
+  }
 
-    .btn-driver{
-        display: none;
-    }
-    .champions .champions-header{
-        grid-area: champions-header;
-    }
-    .champions .champion-desc {
-        grid-area: champions-desc;
-    }
-    .champions {
-        grid-template-areas: "champions-header champions-header"
-                            " champions-desc champions-desc"
-    }
-    .card-about{
-        width: 60%;
-    } 
+  .btn-driver {
+    display: none;
+  }
 
-    .card-logo {
-        width: 25%;
-        padding: 2rem;
-    }
+  .champions .champions-header {
+    grid-area: champions-header;
+  }
+
+  .champions .champion-desc {
+    grid-area: champions-desc;
+  }
+
+  .champions {
+    grid-template-areas:
+      "champions-header champions-header"
+      " champions-desc champions-desc";
+  }
+
+  .card-about {
+    width: 60%;
+  }
+
+  .card-logo {
+    width: 25%;
+    padding: 2rem;
+  }
 }
-

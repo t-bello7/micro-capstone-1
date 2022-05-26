@@ -1,87 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 @font-face {
-    font-family: 'Cocogoose';
-    src: url('../font/Cocogoose-Pro-Thin-trial.ttf');
-  }
-:root {
-
-    /* colors */
-    --clr-light: #d3d3d3;
-    --clr-dark: #272a31;
-    --clr-primary: #ec5242;
-    --clr-white: #ffffff;
-
-    /* fonts */
-    --ff-cocogoose:'Cocogoose', sans-serif;
-    --ff-lato:'Lato', sans-serif;
-
-    --gap: 1rem;
+  font-family: 'Cocogoose';
+  src: url('../font/Cocogoose-Pro-Thin-trial.ttf');
 }
 
-.bg-dark { background-color: var(--clr-dark);}
-.bg-light { background-color: var(--clr-light);}
-.bg-primary { background-color: var(--clr-primary);}
-.bg-white { background-color: var(--clr-white);}
+:root {
+  /* colors */
+  --clr-light: #d3d3d3;
+  --clr-dark: #272a31;
+  --clr-primary: #ec5242;
+  --clr-white: #fff;
 
-.text-dark { color: var(--clr-dark);}
-.text-light { color: var(--clr-light);}
-.text-primary { color: var(--clr-primary);}
-.text-white { color: var(--clr-white);}
+  /* fonts */
+  --ff-cocogoose: 'Cocogoose', sans-serif;
+  --ff-lato: 'Lato', sans-serif;
+  --gap: 1rem;
+}
 
-.ff-lato { font-family:var(--ff-lato);}
-.ff-cocogoose { font-family: var(--ff-cocogoose);}
+.bg-dark { background-color: var(--clr-dark); }
+.bg-light { background-color: var(--clr-light); }
+.bg-primary { background-color: var(--clr-primary); }
+.bg-white { background-color: var(--clr-white); }
+
+.text-dark { color: var(--clr-dark); }
+.text-light { color: var(--clr-light); }
+.text-primary { color: var(--clr-primary); }
+.text-white { color: var(--clr-white); }
+
+.ff-lato { font-family: var(--ff-lato); }
+.ff-cocogoose { font-family: var(--ff-cocogoose); }
 
 .flex {
-    display: flex;
-    gap: var(--gap);
+  display: flex;
+  gap: var(--gap);
 }
 
-.sr-only{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    border: 0;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-.grid{
-    display: grid;
+.grid {
+  display: grid;
 }
 
 .center {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .container > * {
-    max-width: 85%;
-    margin: 0 auto;
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .flow > *:where(:not(:first-child)) {
-    margin-top: var(--flow-space, 1rem);
+  margin-top: var(--flow-space, 1rem);
 }
 
 .mg-1 {
-    margin-block: 1rem;
+  margin-block: 1rem;
 }
 
 .mg-2 {
-    margin-block: 2rem;
+  margin-block: 2rem;
 }
 
 .mg-4 {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
+
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
-

@@ -7,9 +7,9 @@ const footer = document.querySelector('.footer');
 const body = document.querySelector('body');
 const currentPage = window.location.href;
 
-let aboutRegex = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]\about.html/g;
+const aboutRegex = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]\about.html/g;
 
-let result = currentPage.match(aboutRegex)
+const result = currentPage.match(aboutRegex);
 
 const partner = ` <section class="mg-1 partners flow container bg-dark">
             <h2 class="center text-light">Partner</h2>
@@ -720,8 +720,8 @@ const partner = ` <section class="mg-1 partners flow container bg-dark">
               </svg>
         
             </div>
-        </section>`        
-  const footers =  `
+        </section>`;
+const footers = `
   <section class="container footer flex">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120px" height="30px" viewBox="0 0 120 30" version="1.1" class="injected-svg js-svg-inject">
     <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
@@ -741,45 +741,43 @@ const partner = ` <section class="mg-1 partners flow container bg-dark">
   </svg>
     <span>2015 creative commons korea.<br> Some Rights Reserved</span>
 </section>
-  `
+  `;
 
 const handleDesktopChange = (e) => {
-    if (!e.matches){
-    try{
-        result.includes('/about.html')
-        footer.parentElement.insertBefore(partners, footer)
-        footer.classList.remove('bg-dark');
-        footer.classList.remove('text-white');
+  if (!e.matches) {
+    try {
+      result.includes('/about.html');
+      footer.parentElement.insertBefore(partners, footer);
+      footer.classList.remove('bg-dark');
+      footer.classList.remove('text-white');
+    } catch (error) {
+      const partnerss = document.querySelector('.partners');
+      const footerss = document.querySelector('.footer');
+      partnerss.parentElement.removeChild(partnerss);
+      footerss.parentElement.removeChild(footerss);
     }
-    catch (error){
-        const partnerss = document.querySelector('.partners');
-        const footerss = document.querySelector('.footer');
-        partnerss.parentElement.removeChild(partnerss);
-        footerss.parentElement.removeChild(footerss);
+  }
+  if (e.matches) {
+    try {
+      result.includes('/about.html');
+      partners.parentElement.removeChild(partners);
+      footer.classList.add('bg-dark');
+      footer.classList.add('text-white');
+    } catch (error) {
+      body.innerHTML += partner;
+      body.innerHTML += footers;
     }
-}
-    if (e.matches) {
-        console.log('media Query Matched!')
-        try {
-            result.includes('/about.html')
-            partners.parentElement.removeChild(partners);
-            footer.classList.add('bg-dark');
-            footer.classList.add('text-white');
-        } catch(error){
-            body.innerHTML += partner;
-            body.innerHTML += footers;
-        }
-    }
-}
+  }
+};
 
-mediaQuery.addListener(handleDesktopChange)
+mediaQuery.addListener(handleDesktopChange);
 
-handleDesktopChange(mediaQuery)
+handleDesktopChange(mediaQuery);
 
-menuBtn.addEventListener('click', ()=> {
-    menu.classList.toggle('visible');
-})
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('visible');
+});
 
-closeBtn.addEventListener('click', ()=> {
-    menu.classList.toggle('visible');
-})
+closeBtn.addEventListener('click', () => {
+  menu.classList.toggle('visible');
+});
