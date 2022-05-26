@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @font-face {
     font-family: 'Cocogoose';
-    src: url('../font/Cocogoose-Pro-Thin-Trial.ttf');
+    src: url('../font/Cocogoose-Pro-Thin-trial.ttf');
   }
 :root {
 
@@ -9,6 +9,7 @@
     --clr-light: #d3d3d3;
     --clr-dark: #272a31;
     --clr-primary: #ec5242;
+    --clr-white: #ffffff;
 
     /* fonts */
     --ff-cocogoose:'Cocogoose', sans-serif;
@@ -20,10 +21,12 @@
 .bg-dark { background-color: var(--clr-dark);}
 .bg-light { background-color: var(--clr-light);}
 .bg-primary { background-color: var(--clr-primary);}
+.bg-white { background-color: var(--clr-white);}
 
 .text-dark { color: var(--clr-dark);}
 .text-light { color: var(--clr-light);}
 .text-primary { color: var(--clr-primary);}
+.text-white { color: var(--clr-white);}
 
 .ff-lato { font-family:var(--ff-lato);}
 .ff-cocogoose { font-family: var(--ff-cocogoose);}
