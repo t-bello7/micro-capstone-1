@@ -45,6 +45,9 @@
     fill: var(--clr-dark)
 }
 
+.drivers {
+    padding-bottom: 2rem;
+}
 .driver-img {
     width: 100%;
 }
@@ -72,4 +75,24 @@
 
 .btn-driver > i {
     margin-left: 1rem;
+}
+
+
+.champion{
+    width: 80%;
+    padding: 2rem 2rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.champion-one {
+    background-image: url(../img/champion-2021.jpg);
+}
+
+.champion-two {
+    background-image: url(../img/champion-2020.jpg);
+}
+
+.partners{
+    height: 50vh;
 }

@@ -73,3 +73,7 @@
 .mg-2 {
     margin-block: 2rem;
 }
+
+.underline {
+    text-decoration: underline;
+}
