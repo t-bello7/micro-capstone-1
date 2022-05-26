@@ -33,7 +33,7 @@
 
 .flex {
     display: flex;
-    gap: var(--gap)
+    gap: var(--gap);
 }
 
 .sr-only{
@@ -74,6 +74,9 @@
     margin-block: 2rem;
 }
 
+.mg-4 {
+    margin-top: 4rem;
+}
 .underline {
     text-decoration: underline;
 }
@@ -81,3 +84,4 @@
 .bold {
     font-weight: bold;
 }
+
