@@ -19,6 +19,10 @@
   align-items: center;
 }
 
+.menu .logo {
+  margin-top: 5rem;
+}
+
 .visible {
   display: flex;
 }
@@ -259,6 +263,10 @@ a:hover {
     padding-inline: 8%;
     height: 10vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  }
+
+  .menu .logo {
+    margin-top: 0;
   }
 
   .nav {
