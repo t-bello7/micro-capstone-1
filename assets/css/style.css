@@ -40,10 +40,13 @@
   align-items: center;
   gap: 3rem;
 }
-.link{
+
+.link {
   color: var(--clr-dark);
 }
-.link:hover, .link:active {
+
+.link:hover,
+.link:active {
   color: var(--clr-primary);
 }
 
