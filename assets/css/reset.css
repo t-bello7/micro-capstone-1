@@ -19,7 +19,7 @@ h5,
 h6,
 p,
 figure,
-picture {
+picture , hr{
     padding: 0;
     margin: 0;
 }
@@ -53,5 +53,4 @@ select {
 li, a {
     text-decoration: none;
     list-style-type: none;
-    color: inherit;
 }
