@@ -69,14 +69,14 @@ const renderDocuments = (arr, container) => {
   });
 };
 
-renderDocuments(drivers, driverContainer);
-
-const button = document.createElement('button');
-button.innerHTML = 'MORE <i class="fa-solid fa-chevron-down"></i> ';
-button.type = 'button';
-button.className = 'center btn btn-driver';
-
-driverContainer.appendChild(button);
+if (driverContainer) {
+  renderDocuments(drivers, driverContainer);
+  const button = document.createElement('button');
+  button.innerHTML = 'MORE <i class="fa-solid fa-chevron-down"></i> ';
+  button.type = 'button';
+  button.className = 'center btn btn-driver';
+  driverContainer.appendChild(button);
+}
 
 menuBtn.addEventListener('click', () => {
   menu.classList.add('visible');
