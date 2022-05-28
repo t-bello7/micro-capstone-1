@@ -2,55 +2,50 @@
 
 # Project Name
 
-> Description the project.
+> Formula One FanPage
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS3
+- Javascript
+- SVGs
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://t-bello7.github.io/micro-capstone-1)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Basic knowledge of HTML, CSS and Javascript
 
 ### Setup
+- Clone this repository using the command ` git clone https://github.com/t-bello7/micro-capstone-1`
 
 ### Install
-
+- Open your terminal and run the command yarn install
 ### Usage
 
+- You can modify the HTML, CSS and Javascript files if you want to make any change to the project.
+
 ### Run tests
-
-### Deployment
-
-
+There are three test configurations in this project which are eslint for javascript tests, hint for html accessibility tests and stylint for css tests. To run the tests run the following commands for each
+- yarn eslint . 
+- yarn stylelint "**/*.{css, scss}"
+- yarn hint .
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@t-bello7](https://github.com/t-bello7)
+- Twitter: [@__tbello](https://twitter.com/__tbello)
+- LinkedIn: [Bello Oluwatomisin](https://linkedin.com/in/tbello7)
 
 ## 🤝 Contributing
 
@@ -64,9 +59,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- Designed by [Cindy](https://www.behance.net/adagio07) - [Design Link](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## 📝 License
 
