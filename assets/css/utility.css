@@ -85,3 +85,7 @@
 .bold {
   font-weight: bold;
 }
+
+.pd-2 {
+  padding-block: 2rem;
+}

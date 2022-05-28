@@ -10,7 +10,14 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="ff-lato">
-  <header class="container bg-light header-about">
+  <header class="container header header-about">
+      <div class="topbar text-light bg-dark">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <span>Logout</span>
+        <span>Mypage</span>
+        <span>Korean</span>
+      </div>
     <i class="fa-solid fa-bars btn-menu"></i>
         <nav class="menu bg-white">
             <i class="fa-solid fa-xmark btn-close"></i>
@@ -30,32 +37,33 @@
                 </g>
               </svg>
             </a>
-            <div>
-                <ul class="flex nav text-dark">
-                    <li><a href="./about.html">About</a></li>
+            <div class="navbar flex">
+                <ul class="flex nav">
+                    <li><a class="text-dark" href="./about.html">About</a></li>
                     <li><a href="#">Program</a></li>
                     <li><a href="#">Join</a></li>
                 </ul>
+                <button class="btn-campaign" type="button"> CC Campaign    </button>
             </div>
-        <button class="btn-campaign" type="button"> CC Campaign    </button>
     </nav>
       
     <h1 class="mg-2 center">
-      <span class="text-primary">Hello! F1 Fan</span> <br>
-      <span class="text-primary"> Forumla One FanPage </span>
+      <span class="text-primary header-span">Hello! F1 Fan</span> <br>
+      <span class="text-primary header-title"> Monaco Grand Prix 2022 - F1 Race </span>
     </h1>
 
     <p class="card card-about text-dark center">
       A new F1 season means a new set of fans ready to immerse themselves in the technicolour, sensory overload-y glory that is Formula 1. To help new fans get themselves up to speed, we decided to create a fanpage to get the latest news.
     </p>
-    <p class="center mg-2">
+    <p class="center pd-2">
         Please contact us per Email for any further questions about CC global summit 2015! <span class="underline bold">cccumit2015@cckorea.org</span>
     </p>
   </header>
+  <hr>
     
   <section class="center about container flow">
-        <h2 class="mg-4">Creative Commons Global Summit 2015 Logo</h2>
-        <p>The logo of CC global summit was decided through the logo competition from 8 june to 7 july.</p>
+        <h2 class="about-header">Creative Commons Global Summit 2015 Logo</h2>
+        <p class="about-desc">The logo of CC global summit was decided through the logo competition from 8 june to 7 july. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsam quidem aspernatur nulla officia. Ea omnis commodi, tempore ipsam vitae similique assumenda possimus earum quidem! Dignissimos corporis beatae numquam cupiditate.</p>
         <div class="center card card-about card-logo">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120px" height="30px" viewBox="0 0 120 30" version="1.1" class="injected-svg js-svg-inject">
             <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
@@ -78,16 +86,16 @@
         <h2 class="center champions-header">See the global Championship winners</h2>
         <p class="champion-desc">Take a look at the last two global summits which took place in Yas Marina Circuit.</p>
         <div class="champion champion-one bold">
-            <span>2013</span>
-            cc Global summit in 2013 in Buenos Aires
+            <span>2013   cc Global summit in 2013 in Buenos Aires </span>
+          
         </div>
         <div class="champion champion-two bold">
-            <span>2013</span>
-            cc Global summit in 2013 in Buenos Aires
+            <span>2013 cc Global summit in 2013 in Buenos Aires </span>
+            
         </div>
     </section>
-    <section class="mg-1 partners flow container bg-dark">
-        <h2 class="center text-light">Partner</h2>
+    <section class="partners flow about-partners container bg-dark">
+        <h2 class="center text-light partners-header">Partner</h2>
         <div class="partner flex center">
           <svg class="mc-lauren" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.8 19.5">
               <path class="mc-2" d="M96.1 8.6c19.8-10.7 39.8-7 16.7 8 6.6-9.5-.6-12-16.7-8z" />
@@ -111,7 +119,7 @@
           </svg>
         </div>
     </section>
-    <footer class="container footer flex">
+    <footer class="container about-footer footer flex">
       <svg class="f1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120px" height="30px" viewBox="0 0 120 30" version="1.1">
         <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
         <defs>

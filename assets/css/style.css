@@ -3,24 +3,42 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-block: 2rem;
 }
 
-.header-about {
-  background: var(--clr-light);
+.header-span {
+  font-weight: normal;
+}
+
+.header-title {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.topbar {
+  display: none;
 }
 
 .menu {
   display: none;
   height: 100vh;
+  align-items: center;
+  gap: var(--gap);
   position: absolute;
   top: 0;
   width: 60%;
   flex-direction: column;
-  align-items: center;
 }
 
 .menu .logo {
   margin-top: 5rem;
+}
+
+.navbar {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
 }
 
 .visible {
@@ -29,9 +47,11 @@
 
 .nav {
   flex-direction: column;
+  gap: 3rem;
 }
 
-a:hover {
+a:hover,
+a:active {
   color: var(--clr-primary);
 }
 
@@ -54,7 +74,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 2rem;
+  padding-block: 2rem;
 }
 
 .main > div {
@@ -63,6 +83,9 @@ a:hover {
 
 .card-mains {
   flex-direction: column;
+  flex-basis: 3rem;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .btn-close,
@@ -82,13 +105,17 @@ a:hover {
 
 .card-main {
   border: none;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   align-items: center;
 }
 
 .btn {
   padding: 2rem 3rem;
   display: block;
+}
+
+.btn-main-desktop {
+  display: none;
 }
 
 .partner {
@@ -130,7 +157,11 @@ a:hover {
 }
 
 .about {
-  margin-bottom: 4rem;
+  padding-block: 3rem;
+}
+
+.about-desc {
+  max-width: 60%;
 }
 
 .card-about {
@@ -138,42 +169,49 @@ a:hover {
   border: 1px solid var(--clr-light);
 }
 
+.champions {
+  padding-block: 3rem;
+}
+
 .champion {
-  width: 80%;
-  padding: 4rem 3rem;
+  width: 45ch;
+  height: 40vh;
   position: relative;
   color: var(--clr-white);
   background-color: rgb(236, 82, 66);
   z-index: 2;
 }
 
-.champion-one::after {
+.champion > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.champion-one::after,
+.champion-two::after {
   content: "";
-  background-image: url("../img/champion-2021.jpg");
   background-color: var(--clr-primary);
   background-repeat: no-repeat;
-  background-size: 100%;
   opacity: 0.5;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  background-size: cover;
+  transform: scale(2);
+  transform-origin: 100% 100%;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;
 }
 
+.champion-one::after {
+  background-image: url("../img/champion-2021.jpg");
+}
+
 .champion-two::after {
-  content: "";
   background-image: url("../img/champion-2020.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
 }
 
 .st64 {
@@ -235,15 +273,82 @@ a:hover {
   stroke: #000;
 }
 
+.index-partners {
+  display: none;
+}
+
+.footer {
+  padding-block: 3rem;
+}
+
+.index-footer {
+  display: none;
+}
+
+.about-partners {
+  display: block;
+}
+
+.partners-header {
+  padding-block: 1rem;
+  position: relative;
+}
+
+.drivers .drivers-header,
+.main-header,
+.about-header,
+.champions-header {
+  padding-block: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.drivers .drivers-header::after,
+.partners-header::after,
+.main-header::after,
+.about-header::after,
+.champions-header::after {
+  content: "";
+  background: var(--clr-primary);
+  position: absolute;
+  bottom: -20%;
+  left: 25%;
+  margin: 0 auto;
+  height: 5%;
+  width: 30px;
+}
+
+.partners-header::after,
+.main-header::after,
+.about-header::after,
+.champions-header::after {
+  left: 48%;
+}
+
 @media (min-width: 768px) {
   .header,
   .header-about {
     height: 100vh;
+    padding-bottom: 2rem;
   }
 
   .header > h1,
   .header-about > h1 {
     margin-top: 10%;
+  }
+
+  .navbar {
+    flex-direction: row;
+  }
+
+  .topbar {
+    display: flex;
+    max-width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--gap);
+    padding-right: 8%;
+    height: 4vh;
   }
 
   .btn-menu,
@@ -255,7 +360,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     position: static;
     background-color: var(--clr-white);
     width: 100%;
@@ -291,12 +395,19 @@ a:hover {
     height: 50px;
   }
 
-  /* .driver-img {
-        width: 100px;
-    } */
+  .btn-main-mobile {
+    display: none;
+  }
+
+  .btn-main-desktop {
+    display: block;
+    background: transparent;
+    text-decoration: underline;
+  }
 
   .drivers .drivers-header {
     grid-area: drivers-header;
+    position: relative;
   }
 
   .drivers {
@@ -330,5 +441,22 @@ a:hover {
   .card-logo {
     width: 25%;
     padding: 2rem;
+  }
+
+  .index-partners {
+    display: block;
+  }
+
+  .about-partners {
+    display: none;
+  }
+
+  .index-footer {
+    display: flex;
+  }
+
+  .about-footer {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
   }
 }
